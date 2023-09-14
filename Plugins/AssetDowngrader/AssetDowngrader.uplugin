@@ -3,7 +3,7 @@
 	"Version": 1,
 	"VersionName": "1.0",
 	"FriendlyName": "AssetDowngrader",
-	"Description": "",
+	"Description": "Adds the ability to rewrite the version information contained in the asset's internal information so that older versions of the asset can still be loaded.",
 	"Category": "Other",
 	"CreatedBy": "Naotsun",
 	"CreatedByURL": "",

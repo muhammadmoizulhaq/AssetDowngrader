@@ -11,6 +11,15 @@ namespace AssetDowngrader
 	{
 		// The name of this plugin.
 		static const FName PluginName = TEXT("AssetDowngrader");
+
+		// The file extension type when assets are saved on disk.
+		static const TArray<FString, TInlineAllocator<2>> AssetFileExtensions = {
+			TEXT("uasset"),
+			TEXT("umap"),
+		};
+
+		// The size for reading and writing data in chunks.
+		static constexpr int32 ChunkSize = 2000;
 	}
 }
 

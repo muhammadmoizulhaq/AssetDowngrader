@@ -1,6 +1,7 @@
 // Copyright 2023 Naotsun. All Rights Reserved.
 
 #include "AssetDowngrader/IAssetDowngrader.h"
+#include "AssetDowngrader/Utilities/AssetDowngraderSettings.h"
 
 namespace AssetDowngrader
 {
@@ -21,10 +22,14 @@ namespace AssetDowngrader
 
 	void FAssetDowngraderModule::StartupModule()
 	{
+		// Register settings.
+		UAssetDowngraderSettings::Register();
 	}
 
 	void FAssetDowngraderModule::ShutdownModule()
 	{
+		// Unregister settings.
+		UAssetDowngraderSettings::Unregister();
 	}
 }
 	
